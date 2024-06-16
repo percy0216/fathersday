@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Lobster', ;
+    background-size: 400% 400%;
+    position: relative;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(./IMAGENES/fondo-negro-dorado-fondo-negro-palabras-oro_826801-380.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+
+}
+
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    background-color: black;
+}
+.feliz{
+    color: #fff;
+
+}
+.image0{
+    width: 100%;
+    height: 100%;
+}
+#container{
+    width: 90%;
+    margin: 0px auto;
+    font-size: xx-large;
+    text-align: center;
+    color: aliceblue;
+}
+footer{
+    text-align: center;
+    font-family: 'Lobster', ;
+    font-size: xx-large;
+    color: aliceblue;
+    width: 90%;
+    margin: 0px auto;
+}
+.viaje{
+    display: flow-root;
+}
+.image3{
+    width: 95%;
+    height: 95%;
+    border: 2px solid #fff;
+}
+.image4{
+    width: 45%;
+    height: 50%;
+    border: 2px solid #fff;
+}
+.image5{
+    width: 45%;
+    height: 50%;
+    border: 2px solid #fff;
+}
+.image2{
+    width: 200px;
+    border: 2px solid #fff;
+}
+.trabajo{
+    display: flow-root;
+}
+.image6{
+    width: 45%;
+    height: 45%;
+    border: 2px solid #fff;
+}
+.cumple1{
+   display: flow-root;
+}
+.image12{
+    width: 45%;
+    height: 50%;
+    border: 2px solid #fff;
+}
+.cumple2{
+    display: flow-root;
+}
+.image18{
+    width: 25%;
+    height: 25%;
+    border: 2px solid #fff;
+}
+.image20{
+    width: 85%;
+    height: 50%;
+    border: 2px solid #fff;
+}
+.image1{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+}
+.video{
+    height: 100%;
+    width: 100%;
+    border: 7px solid #fff;
+}
+
+#play-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#play-button:active {
+    background-color: #004080;
+}
+
+#play-button {
+    padding: 2px 20px; /* Reduce el tamaño del botón */
+    font-size: 16px; /* Reduce el tamaño del texto del botón */
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .image0, .image1 {
+        width: 33.33%;
+    }
+
+    .image3 {
+        width: 40%; /* Ajuste para pantallas aún más grandes */
+    }
+
+    .image4, .image5, .image6, .image12, .image18, .image20 {
+        width: 30%;
+        height: auto;
+    }
+}
