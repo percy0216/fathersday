@@ -1,145 +1,158 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    font-family: 'Lobster', ;
-    background-size: 400% 400%;
-    position: relative;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-    url(./IMAGENES/fondo-negro-dorado-fondo-negro-palabras-oro_826801-380.avif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
+/* Tipografía cálida */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-
+:root {
+  --color-fondo: #fff8f0;
+  --color-primario: #2753cd;
+  --color-secundario: #333;
+  --color-acento: #ffe1d6;
+  --borde-radius: 12px;
 }
 
-h1{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 250%;
-    background-color: black;
-}
-.feliz{
-    color: #fff;
-
-}
-.image0{
-    width: 100%;
-    height: 100%;
-}
-#container{
-    width: 90%;
-    margin: 0px auto;
-    font-size: xx-large;
-    text-align: center;
-    color: aliceblue;
-}
-footer{
-    text-align: center;
-    font-family: 'Lobster', ;
-    font-size: xx-large;
-    color: aliceblue;
-    width: 90%;
-    margin: 0px auto;
-}
-.viaje{
-    display: flow-root;
-}
-.image3{
-    width: 95%;
-    height: 95%;
-    border: 2px solid #fff;
-}
-.image4{
-    width: 45%;
-    height: 50%;
-    border: 2px solid #fff;
-}
-.image5{
-    width: 45%;
-    height: 50%;
-    border: 2px solid #fff;
-}
-.image2{
-    width: 200px;
-    border: 2px solid #fff;
-}
-.trabajo{
-    display: flow-root;
-}
-.image6{
-    width: 45%;
-    height: 45%;
-    border: 2px solid #fff;
-}
-.cumple1{
-   display: flow-root;
-}
-.image12{
-    width: 45%;
-    height: 50%;
-    border: 2px solid #fff;
-}
-.cumple2{
-    display: flow-root;
-}
-.image18{
-    width: 25%;
-    height: 25%;
-    border: 2px solid #fff;
-}
-.image20{
-    width: 85%;
-    height: 50%;
-    border: 2px solid #fff;
-}
-.image1{
-    width: 100%;
-    height: 100%;
-    border: 2px solid #fff;
-}
-.video{
-    height: 100%;
-    width: 100%;
-    border: 7px solid #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#play-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-secundario);
+  line-height: 1.7;
+  padding: 1rem;
 }
 
-#play-button:active {
-    background-color: #004080;
+/* Encabezado */
+.hero {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: var(--borde-radius);
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 #play-button {
-    padding: 2px 20px; /* Reduce el tamaño del botón */
-    font-size: 16px; /* Reduce el tamaño del texto del botón */
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    display: block;
-    margin: 0 auto;
+  background-color: white;
+  color: var(--color-primario);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@media (min-width: 1024px) {
-    .image0, .image1 {
-        width: 33.33%;
-    }
+#play-button:hover {
+  background-color: var(--color-acento);
+}
 
-    .image3 {
-        width: 40%; /* Ajuste para pantallas aún más grandes */
-    }
+/* Carta */
+.contenido {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
 
-    .image4, .image5, .image6, .image12, .image18, .image20 {
-        width: 30%;
-        height: auto;
-    }
+.carta {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--borde-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Galería */
+.galeria {
+  margin-bottom: 2rem;
+}
+
+.galeria h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid img {
+  width: 100%;
+  border-radius: var(--borde-radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Footer / Despedida */
+.footer {
+  background-color: #fef3e6;
+  padding: 2rem 1rem;
+  border-radius: var(--borde-radius);
+  margin-top: 3rem;
+}
+
+.despedida p {
+  margin-bottom: 1rem;
+}
+
+.footer h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: var(--color-primario);
+}
+
+/* Video responsivo */
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--borde-radius);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .galeria h2 {
+    font-size: 1.6rem;
+  }
+
+  #play-button {
+    width: 100%;
+  }
 }
